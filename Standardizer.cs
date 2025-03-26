@@ -20,6 +20,11 @@ namespace LogStandardizer
             {"ERROR", "ERROR"}
         };
 
+        /// <summary>
+        /// Get standardizer for input file text
+        /// </summary>
+        /// <param name="InputFile_Path">Path of input file text </param>
+        /// <param name="OutputFile_Path">Path of output file text</param>
         public static void GetStandardizer(string InputFile_Path, string OutputFile_Path)
         {
             
@@ -50,7 +55,7 @@ namespace LogStandardizer
                         try
                         {
                             
-                            var PartsOfLine = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                            var PartsOfLine = line.Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries);
                             
                             string datePart = PartsOfLine[0].Trim(); 
                             string time_out = PartsOfLine[1].Trim();

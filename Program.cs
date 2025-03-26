@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using LogStandardizer;
 
 string Input_LogPath = "Input_LogPath.txt";
